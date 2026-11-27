@@ -29,14 +29,12 @@ Un essai local du point d'accès `GET /api/products` a renvoyé le statut HTTP `
 
 Le projet fournit une API Spring Boot testée, avec des routes REST, des règles de validation et une gestion cohérente des erreurs. Le stockage en mémoire convient à l'exercice, mais ne remplace pas une base de données persistante.
 
-## 5. Captures à joindre
+## 5. Captures des exécutions
 
-Les captures doivent être prises après exécution réelle sur l'ordinateur utilisé pour la démonstration :
+**Création d'un produit dans Postman — HTTP 201 :**
 
-1. Terminal PowerShell montrant le serveur démarré.
-2. Postman affichant une création réussie (`201 Created`) et sa réponse JSON.
-3. Postman montrant les tests de la collection ou une recherche.
-4. Facultatif : exécution locale des tests avec `BUILD SUCCESS`.
-5. Page GitHub du projet ou résultat du workflow GitHub Actions.
+![Création d'un produit avec Postman](captures-rapport/05-postman-creation.png)
 
-**Aucune capture d'écran n'est intégrée à ce rapport.**
+**Tests automatisés — `mvn test` :**
+
+![Résultat des tests Maven](captures-rapport/03-terminal-mvn-test.png)
